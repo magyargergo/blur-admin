@@ -44,6 +44,6 @@
     "wrench": "~1.5.8"
   },
   "scripts": {
-    "postinstall": "HOME=$OPENSHIFT_REPO_DIR bower install || bower install"
+    "postinstall": "HOME=$HOME/$OPENSHIFT_REPO_DIR bower install || bower install"
   }
 }
