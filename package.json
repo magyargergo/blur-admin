@@ -37,12 +37,13 @@
     "gulp-zip": "^3.0.2",
     "http-proxy-middleware": "~0.9.0",
     "lodash": "~3.10.1",
+	"bower": "latest",
     "main-bower-files": "~2.9.0",
     "uglify-save-license": "~0.4.1",
     "wiredep": "~2.2.2",
     "wrench": "~1.5.8"
   },
   "scripts": {
-    "postinstall": "bower install"
+    "postinstall": "HOME=$OPENSHIFT_REPO_DIR bower install || bower install"
   }
 }
